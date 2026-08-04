@@ -1,0 +1,13 @@
+solver: REPLACE_WITH_ACTUAL_SOLVER_AND_VERSION
+mesh_nm: null
+boundary_conditions: null
+gold_model: null
+graphene_model: null
+geometry:
+  nanodisk_diameter_nm: null
+  gold_height_nm: 40
+  titanium_height_nm: 2
+  period_nm: 400
+wavelength_range_nm: [600, 900]
+convergence_study: REQUIRED
+note: This template is not an executed FDTD model and must not be cited as simulation evidence.

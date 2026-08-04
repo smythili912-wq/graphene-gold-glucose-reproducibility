@@ -1,0 +1,12 @@
+file,column,unit,description,required
+experimental_spectra.csv,sample_id,,Foreign key to sample metadata,yes
+experimental_spectra.csv,wavelength_nm,nm,Instrument wavelength,yes
+experimental_spectra.csv,reflectance,fraction,Unprocessed reflectance,yes
+sample_metadata.csv,sample_id,,Unique independent sample identifier,yes
+sample_metadata.csv,sensor_id,,Physical sensor identifier,yes
+sample_metadata.csv,batch_id,,Independent fabrication batch,yes
+sample_metadata.csv,acquisition_id,,Acquisition campaign identifier,yes
+sample_metadata.csv,matrix,,Buffer saliva sweat tears serum or other,yes
+sample_metadata.csv,concentration_mM,mM,Reference glucose concentration,yes
+sample_metadata.csv,replicate_type,,Independent or technical replicate,yes
+sample_metadata.csv,is_synthetic,boolean,True only for demonstration data,yes
