@@ -1,0 +1,32 @@
+[build-system]
+requires = ["setuptools>=68", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "graphene-gold-glucose-reproducibility"
+version = "1.0.0"
+description = "Leakage-safe spectral calibration and uncertainty analysis"
+requires-python = ">=3.10"
+dependencies = [
+  "numpy>=1.24,<3",
+  "pandas>=2.0,<3",
+  "scipy>=1.10,<2",
+  "scikit-learn>=1.3,<2",
+  "matplotlib>=3.7,<4",
+  "PyYAML>=6,<7",
+  "joblib>=1.3,<2"
+]
+
+[project.optional-dependencies]
+cnn = ["torch>=2.1,<3"]
+dev = ["pytest>=7.4,<9", "ruff>=0.5,<1"]
+
+[tool.setuptools]
+packages = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["."]
+python_files = ["test_*.py"]
+
+[tool.ruff]
+line-length = 100
